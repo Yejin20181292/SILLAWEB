@@ -1,0 +1,372 @@
+<!-- 회사소개 > 회사개요 -->
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title>회사개요</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css" rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	<link href="css/freelancer.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="css/TEST.css" rel="stylesheet"> 
+
+</head>
+
+<body id="page-top" OnLoad="na_preload_img(false, 'img/button/about_view more_c.jpg', 'img/button/공지%20바로가기_on.PNG', 'img/button/공지 바로가기_on.PNG', 'img/button/홍보%20더%20보기.PNG', 'img/button/홍보 더 보기.PNG');">
+    <div class="container">
+        <h1>CSS Responsive Tabs</h1>
+        <h2>Responsive & abstarct</h2>
+        <h2>v.2</h2>
+        <h2 class="alert">Price: 2,500$</h2>
+         <h2 class="note">based on hours spent</h2>
+        <p><small>special thanks to <a href="https://codepen.io/mikestreety">mikestreety</a> for his idea!</small></p>
+      
+        <div class="demo">
+          <h3>Characteristics:</h3>
+          <ol>
+            <li>Variable Tab Content Heights</li>
+            <li>General rules (not per tab selectors as in other solutions)</li>
+            <li>Tab content animation</li>
+            <li>Huge number of tabs leads to wrapped behaviour</li>
+            <li>For screens below 450px it converts to vertical stacked tab labels</li>
+            <li>It can be converted to vertical accordion</li>
+            <li>Depth of tags only 1</li>
+            <li> core code 58 lines uncompressed(!) + extra presentational classes which you can delete(!)
+          </ol>
+          <h3>HTML structure:</h3>
+          <ol>
+            <li>level 0: &lt;div class="tabs"&gt; or &lt;div class="tabs shaded op-70 tabs-outline"&gt;</li>
+            <li>level 1: &lt;input type="radio"&gt;</li>
+            <li>level 1: &lt;label&gt;</li>
+            <li>level 1: &lt;div class="tab"&gt;</li>
+            <li>repeat steps 2-4</li>
+          </ol>
+          <h3>CSS structure:</h3>
+          <ol>
+            <li>in file you can delete blocks of code connected with presentational classes you don't need</li>
+          </ol>
+          <h3>Presentational Classes (at root):</h3>
+          <ol>
+            <li>"tabs-top-line": sets a line on top of active tab label</li>
+            <li>"shaded": sets background colors</li>
+            <li>"tabs-outline": sets a line around tab labels</li>
+            <li>"content-outline": sets a line around 
+              the content</li>
+            <li>"tabs-align-left": aligns tab labels to the left (default is justified)</li>
+            <li>"tabs-align-right": aligns tab labels to the right</li>
+            <li>"tabs-align-center": aligns tab labels to the center consequently</li>
+            <li>"tabs-align-center-solo": aligns tab labels to the center seperated</li>
+            <li>"tabs-rtl": reverses tab label order (first label starts at the right side)</li>
+            <li>"op-70": in combination with "shaded" sets background opacity to 0.7 (change or add rules for different opacities)</li>
+            <li>"slide-left": content slides to left</li>
+            <li>"slide-right": content slides to right</li>
+            <li>"slide-top": content slides to top</li>
+            <li>"slide-bottom": content slides to bottom</li>
+            <li>"material": a material theme</li>
+            <li>"accordeon-vertical": a vertical accordeon</li>
+            <li>any combination</li>
+          </ol>
+          <h3>Behavioral Classes (programming):</h3>
+          <ol>
+            <li>apply property "checked" at a hidden input</li>
+          </ol>
+          <h3>Screening Requirements:</h3>
+          <ol>
+            <li>should allow tab label stacking</li>
+            <li>should contain css rules as a generic solution for any number of tabs</li>
+          </ol>
+          <h3>End Result</h3>
+          <p>Flex box satisfies all the requirements. No js is needed. By default the tabs are transparent allowing impressive designs with containers that have background images. Another default behavior is the distribution of tab labels which ocupy all the available space (justified).</p>
+        <p>If we need scrolling tabs then a solution following Bootstrap's tag organization is better with a bit of javascript; the tab labels are organized in one group and the contents into another. Even this solution can be transformed to a such organization as long as we replace option's checked rules with a simple class like ".active" and replace flex box approach with floats. On the other hand, floats are notorious for bad designs when they start to wrap - clearfix hack doesn't solve the problem.</p>
+          <p>Bug: just before the media query break point where wrapping happens, we can see all tab alignements except the default (justified) and "tabs-align-center-solo" to wrap to uneven positions which is logical as these alignments have no vertical axis symmetry.</p>
+        </div>
+        
+        <!-------------------Theme "tabs-top-line"------------------->
+        <h2>1) Theme "tabs-top-line"</h2>
+        <div class="xucbIe5e7EccxiLpC3sBY1Un tabs-top-line">
+          <input type="radio" name="a" id="1" checked="checked">
+          <label for="1"><i class="fa-brands fa-facebook"></i> Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="a" id="2">
+          <label for="2"><i class="fa-brands fa-twitter"></i> Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="a" id="3">
+          <label for="3"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+      </div>
+      <!-------------------End: theme "tabs-top-line"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "shaded"------------------->
+        <h2>2) Theme "shaded"</h2>
+        <div class="xucbIe5e7EccxiLpC3sBY1Un shaded">
+          <input type="radio" name="b" id="4" checked="checked">
+          <label for="4"><i class="fa-brands fa-facebook"></i> Tab One Tab One Tab One Tab One Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="b" id="5">
+          <label for="5"><i class="fa-brands fa-twitter"></i> Tab Two Tab Two Tab Two Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="b" id="6">
+          <label for="6"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      <!-------------------End: theme "shaded"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "tabs-outline"------------------->
+        <h2>3) Theme "tabs-outline"</h2>
+        <div class="xucbIe5e7EccxiLpC3sBY1Un tabs-outline">
+          <input type="radio" name="c" id="7" checked="checked">
+          <label for="7"><i class="fa-brands fa-facebook"></i> Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="c" id="8">
+          <label for="8"><i class="fa-brands fa-twitter"></i> Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="c" id="9">
+          <label for="9"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      <!-------------------End: theme "tabs-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "shaded" + "tabs-outline" + "content-outline"------------------->
+        <h2>4) Theme "shaded" + tabs-outline" + "content-outline"</h2>
+        <div class="xucbIe5e7EccxiLpC3sBY1Un shaded tabs-outline content-outline">
+          <input type="radio" name="d" id="10" checked="checked">
+          <label for="10"><i class="fa-brands fa-facebook"></i> Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="d" id="11">
+          <label for="11"><i class="fa-brands fa-twitter"></i> Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        
+          <input type="radio" name="d" id="12">
+          <label for="12"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      <!-------------------End: theme "shaded" + "tabs-outline" + content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "tabs-align-center-solo" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <h2>5) Theme "tabs-align-center-solo" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"</h2>
+      <div class="background1">
+        <div class="xucbIe5e7EccxiLpC3sBY1Un shaded op-70 tabs-align-center-solo tabs-top-line tabs-outline content-outline">
+          <input type="radio" name="e" id="13" checked="checked">
+          <label for="13"><i class="fa-brands fa-facebook"></i> Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="e" id="14">
+          <label for="14"><i class="fa-brands fa-twitter"></i> Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="e" id="15">
+          <label for="15"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-------------------End: theme "tabs-align-center-solo" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "tabs-rtl" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <h2>6) Theme "tabs-rtl" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"</h2>
+      <div class="background2">
+        <div class="xucbIe5e7EccxiLpC3sBY1Un tabs-rtl shaded op-70 tabs-align-left tabs-top-line tabs-outline content-outline">
+          <input type="radio" name="f" id="16" checked="checked">
+          <label for="16"><i class="fa-brands fa-facebook"></i> Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="f" id="17">
+          <label for="17"><i class="fa-brands fa-twitter"></i> Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="f" id="18">
+          <label for="18"><i class="fa-brands fa-instagram"></i> Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-------------------End: theme "tabs-rtl" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "material" + "slide-right" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <h2>7) Theme "material" + "slide-right" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"</h2>
+      <div class="background3">
+        <div class="xucbIe5e7EccxiLpC3sBY1Un material slide-right shaded op-70 tabs-align-left tabs-top-line tabs-outline content-outline">
+          <input type="radio" name="g" id="19" checked="checked">
+          <label for="19">Tab One</label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="g" id="20">
+          <label for="20">Tab Two</label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        
+          <input type="radio" name="g" id="21">
+          <label for="21">Tab Three</label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-------------------End: theme "material" + "slide-right" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      <!-------------------Theme "accordeon-vertical" + material" + "slide-bottom" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <h2>8) Theme "accordeon-vertical" + material" + "slide-bottom" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"</h2>
+      <div class="background4">
+        <div class="xucbIe5e7EccxiLpC3sBY1Un accordeon-vertical material slide-bottom shaded op-70 tabs-align-left tabs-top-line tabs-outline content-outline">
+          <input type="radio" name="h" id="22" checked="checked">
+          <label for="22"><span>Tab One</span><span class="triangle-right"></span></label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+          <input type="radio" name="h" id="23">
+          <label for="23"><span>Tab Two</span><span class="arr-right"></span></label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+          <input type="radio" name="h" id="24">
+          <label for="24"><span>Tab Three</span><span class="arr-right"></span></label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-------------------End: theme "accordeon-vertical" + material" + "slide-bottom" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+        <!-------------------Theme "accordeon-vertical" + material" + "slide-bottom" + "tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <h2>9) Theme "accordeon-vertical" + material" + "slide-bottom" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"</h2>
+      <div class="background4">
+        <div class="xucbIe5e7EccxiLpC3sBY1Un accordeon-vertical material slide-bottom shaded op-70 tabs-align-left tabs-top-line tabs-outline content-outline">
+          <input type="checkbox" id="25" checked="checked">
+          <label for="25"><span>Tab One</span><span class="triangle-right"></span></label>
+          <div class="tab">
+            <h1>Tab One Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+          <input type="checkbox" id="26">
+          <label for="26"><span>Tab Two</span><span class="arr-right"></span></label>
+          <div class="tab">
+            <h1>Tab Two Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+          <input type="checkbox" id="27">
+          <label for="27"><span>Tab Three</span><span class="arr-right"></span></label>
+          <div class="tab">
+            <h1>Tab Three Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <!-------------------End: theme "accordeon-vertical" + material" + "slide-bottom" + tabs-align-left" + "shaded" + "op-70" + "tabs-top-line" + "tabs-outline" + "content-outline"------------------->
+        <div class="demo">
+          <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+        
+      </div>
+
+</body>
