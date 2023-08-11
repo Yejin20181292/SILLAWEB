@@ -13,7 +13,11 @@
     .R_I_fourth2_cont_wrap { max-width: 768px; }
     .R_I_fourth2_content { width:50%; }
     /* 인사제도 */
-    .P_S_first_cont_wrap { max-width: 1200px; }
+    .P_S_first_cont_wrap { max-width: 1000px; }
+        .P_S_first_contArea { height: 29vh; }
+        .P_S_first_content { width: 33.33333333%; }
+        .P_S_first_contArea { padding-top: 11%; }
+        .P_S_first_iconIMG { width: 30%; }
 }
 /* 768px ~ 1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px){
@@ -29,6 +33,10 @@
     .R_I_fourth2_content { width:50%; }
     /* 인사제도 */
     .P_S_first_cont_wrap { max-width: 768px; }
+        .P_S_first_contArea { height: 25vh; }
+        .P_S_first_content { width: 33.33333333%; }
+        .P_S_first_contArea { padding-top: 11%; }
+        .P_S_first_iconIMG { width: 30%; }
 }
 /* 0 ~ 768px */
 @media screen and (max-width: 768px){
@@ -42,7 +50,11 @@
     .R_I_fourth2_cont_wrap { max-width: 385px; }
     .R_I_fourth2_content { width:100%; }
     /* 인사제도 */
-    .P_S_first_cont_wrap { max-width: 768px; }
+    .P_S_first_cont_wrap { max-width: 400px; }
+        .P_S_first_contArea { height: 22vh; }
+        .P_S_first_content { width: 100%; }
+        .P_S_first_contArea { padding-top: 5%; }
+        .P_S_first_iconIMG { width: 20%; }
 }
 
 
@@ -138,17 +150,15 @@
 }
 .P_S_first_content {
     float:left;
-    width: 33.33333333%; 
     color: #444;
 }
 .P_S_first_contArea {
-    margin: 5%; padding-top: 11%;
-    height: 37vh;
+    margin: 5%; 
     background-color: #E6F0F0;
     border-radius: 20px;
 }
 .P_S_first_cont1_title {
-    width: 50%; text-align: center;
+    width: 60%; text-align: center;
     font-weight: 600;
     margin: 1.5rem auto 0;
     padding-bottom: 5px;
@@ -160,102 +170,22 @@
     font-weight: 300;
     font-size: 13px;
 }
-.P_S_first_content_img1 {
-    width: 40%; 
+.P_S_first_iconIMG {
     margin: 0 auto;
     aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare1.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
-.P_S_first_content_img2 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare2.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img3 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare3.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img4 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare4.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img5 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare5.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img6 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare6.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img7 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare7.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img8 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare8.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img9 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare9.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img10 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare10.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img11 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare11.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.P_S_first_content_img12 {
-    width: 40%; 
-    margin: 0 auto;
-    aspect-ratio: auto 1/1;
-    background: url('../img/recruitment/welfare12.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+.P_S_first_content_img1 { background: url('../img/recruitment/welfare1.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img2 { background: url('../img/recruitment/welfare2.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img3 { background: url('../img/recruitment/welfare3.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img4 { background: url('../img/recruitment/welfare4.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img5 { background: url('../img/recruitment/welfare5.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img6 { background: url('../img/recruitment/welfare6.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img7 { background: url('../img/recruitment/welfare7.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img8 { background: url('../img/recruitment/welfare8.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img9 { background: url('../img/recruitment/welfare9.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img10 { background: url('../img/recruitment/welfare10.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img11 { background: url('../img/recruitment/welfare11.png') no-repeat; background-size: cover; background-position: center center; }
+.P_S_first_content_img12 { background: url('../img/recruitment/welfare12.png') no-repeat; background-size: cover; background-position: center center; }
 /* E:section01 */
 
 /* S:section02 */
