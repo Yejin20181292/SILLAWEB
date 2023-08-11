@@ -151,7 +151,9 @@
 .P_S_first_content {
     float:left;
     color: #444;
+    transition: all 0.2s linear;
 }
+.P_S_first_content:hover { transform: scale(1.08);}
 .P_S_first_contArea {
     margin: 5%; 
     background-color: #E6F0F0;
