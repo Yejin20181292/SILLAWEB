@@ -3,12 +3,21 @@
 /* 1200px ~ 100% width사이즈 */
 @media screen and (min-width: 1200px){
   /* 회사소개 */
+  .company_img { height: 80vh; }
+    .company_A_text { height: 80vh; }
+    .C_A_text_subtitle1 { font-size: 38px; }
+    .C_A_text_subtitle2 { font-size: 30px; }
   .C_A_second_cont_wrap { max-width: 1200px; }
     .C_A_second_content { width: 25%; }
 }
 /* 768px ~ 1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px){
   /* 회사소개 */
+  .company_img { height: 60vh; }
+    .company_A_text { height: 60vh; }
+    .C_A_text_subtitle1 { font-size: 30px; }
+    .C_A_text_subtitle2 { font-size: 25px; }
+    .company_A_text_cont { font-size: 15px; }
   .C_A_second_cont_wrap { max-width: 768px; }
     .C_A_second_content { width: 25%; }
     .C_A_second_content > div { padding: 0 5px; }
@@ -16,6 +25,11 @@
 /* 0 ~ 768px */
 @media screen and (max-width: 768px){
   /* 회사소개 */
+  .company_img { height: 45vh; }
+    .company_A_text { height: 45vh; }
+    .C_A_text_subtitle1 { font-size: 20px; }
+    .C_A_text_subtitle2 { font-size: 15px; }
+    .company_A_text_cont { font-size: 10px; }
   .C_A_second_cont_wrap { max-width: 400px; }
     .C_A_second_content { width: 50%; }
 }
@@ -75,7 +89,7 @@ h2 {
 .C_A_first, .H_first { width: 100%; }
 .company_img {
     float:left;
-    width: 45%; height: 90vh;
+    width: 45%;
     background: url('../img/company_about.png') no-repeat;
         background-size: cover;
         background-position: center center;
@@ -83,7 +97,7 @@ h2 {
 .company_A_text {
   padding: 7% 8%;
   float:left;
-  width: 55%; height: 90vh;
+  width: 55%;
   /* background: #F6F8F8; */
   background: url('../img/about/C_A_right_back.PNG') no-repeat;
         background-size: cover;
@@ -92,7 +106,6 @@ h2 {
 }
 .company_A_text p:nth-child(1) {
   font-weight: bold;
-  font-size: 30px;
 }
 .C_A_first span {
   display: block;
