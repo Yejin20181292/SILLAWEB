@@ -12,6 +12,8 @@
     /* 채용안내(선원탭) */
     .R_I_fourth2_cont_wrap { max-width: 768px; }
     .R_I_fourth2_content { width:50%; }
+    /* 인사제도 */
+    .P_S_first_cont_wrap { max-width: 1200px; }
 }
 /* 768px ~ 1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px){
@@ -25,6 +27,8 @@
     /* 채용안내(선원탭) */
     .R_I_fourth2_cont_wrap { max-width: 570px; }
     .R_I_fourth2_content { width:50%; }
+    /* 인사제도 */
+    .P_S_first_cont_wrap { max-width: 768px; }
 }
 /* 0 ~ 768px */
 @media screen and (max-width: 768px){
@@ -37,6 +41,8 @@
     /* 채용안내(선원탭) */
     .R_I_fourth2_cont_wrap { max-width: 385px; }
     .R_I_fourth2_content { width:100%; }
+    /* 인사제도 */
+    .P_S_first_cont_wrap { max-width: 768px; }
 }
 
 
@@ -127,7 +133,6 @@
     padding: 0% 0% 1.5% 0%;
 }
 .P_S_first_cont_wrap {
-    max-width: 1200px;
     margin: 0 auto;
     background: pink;
 }
