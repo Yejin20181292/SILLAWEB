@@ -1,5 +1,34 @@
 /* 회사소개 style */
 
+/* 1200px ~ 100% width사이즈 */
+@media screen and (min-width: 1200px){
+  /* 회사소개 */
+  .C_A_second_cont_wrap { max-width: 1200px; }
+    .C_A_second_content { width: 25%; }
+}
+/* 768px ~ 1200px */
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  /* 회사소개 */
+  .C_A_second_cont_wrap { max-width: 768px; }
+    .C_A_second_content { width: 25%; }
+    .C_A_second_content > div { padding: 0 5px; }
+}
+/* 0 ~ 768px */
+@media screen and (max-width: 768px){
+  /* 회사소개 */
+  .C_A_second_cont_wrap { max-width: 400px; }
+    .C_A_second_content { width: 50%; }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* S:header */
 #Company_A_visual {
@@ -87,12 +116,11 @@ h2 {
 }
 .mar10 { margin-top: 5%;}
 .C_A_second_cont_wrap {
-    max-width: 1200px; margin: 3% auto 7%;
+    margin: 3% auto 7%;
     overflow: hidden;
 }
 .C_A_second_content {
     float:left;
-    width: 25%;
     transition: all 0.2s linear;
 }
 .C_A_second_content:hover { transform: scale(1.08);}
