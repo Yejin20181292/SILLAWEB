@@ -33,7 +33,7 @@
     .R_I_fourth2_content { width:50%; }
     /* 인사제도 */
     .P_S_first_cont_wrap { max-width: 768px; }
-        .P_S_first_contArea { height: 25vh; }
+        .P_S_first_contArea { height: 27vh; }
         .P_S_first_content { width: 33.33333333%; }
         .P_S_first_contArea { padding-top: 11%; }
         .P_S_first_iconIMG { width: 30%; }
@@ -259,56 +259,16 @@
 }
 
 
-.slide:nth-child(1), .slide:nth-child(11) {
-    background: url('../img/recruitment/bathroom.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(2), .slide:nth-child(12) {
-    background: url('../img/recruitment/cafeteria.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(3), .slide:nth-child(13) {
-    background: url('../img/recruitment/gym_shower_room.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(4), .slide:nth-child(14) {
-    background: url('../img/recruitment/lobby.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(5), .slide:nth-child(15) {
-    background: url('../img/recruitment/meeting_room.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(6), .slide:nth-child(16) {
-    background: url('../img/recruitment/parkingLot.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(7), .slide:nth-child(17) {
-    background: url('../img/recruitment/reception_room.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(8), .slide:nth-child(18) {
-    background: url('../img/recruitment/restaurant.png') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(9), .slide:nth-child(19) {
-    background: url('../img/recruitment/rooftop.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.slide:nth-child(10), .slide:nth-child(20) {
-    background: url('../img/recruitment/screen_golf.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+.slide:nth-child(1), .slide:nth-child(11) { background: url('../img/recruitment/bathroom.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(2), .slide:nth-child(12) { background: url('../img/recruitment/cafeteria.png') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(3), .slide:nth-child(13) { background: url('../img/recruitment/gym_shower_room.png') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(4), .slide:nth-child(14) { background: url('../img/recruitment/lobby.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(5), .slide:nth-child(15) { background: url('../img/recruitment/meeting_room.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(6), .slide:nth-child(16) { background: url('../img/recruitment/parkingLot.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(7), .slide:nth-child(17) { background: url('../img/recruitment/reception_room.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(8), .slide:nth-child(18) { background: url('../img/recruitment/restaurant.png') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(9), .slide:nth-child(19) { background: url('../img/recruitment/rooftop.jpg') no-repeat; background-size: cover; background-position: center center; }
+.slide:nth-child(10), .slide:nth-child(20) { background: url('../img/recruitment/screen_golf.jpg') no-repeat; background-size: cover; background-position: center center; }
 @keyframes scroll {
     0% {
         transform: translateX(0);
