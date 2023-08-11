@@ -93,7 +93,9 @@ h2 {
 .C_A_second_content {
     float:left;
     width: 25%;
+    transition: all 0.2s linear;
 }
+.C_A_second_content:hover { transform: scale(1.08);}
 .C_A_second_content > div {
   margin: 5%; padding-top: 12%;
   height:30vh;
