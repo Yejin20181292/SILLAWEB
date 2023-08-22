@@ -255,8 +255,41 @@ h2 {
 }
 .tab-cont-left a { transition:0.5s all; text-transform: uppercase; }
 .Family_tab_logo {
-  width: 50%; padding: 12% 0; margin: 13% auto 0;
+  /* width: 80%; padding: 12% 0; margin: 13% auto 0; */
+}
+.T_logo01 {
+  width: 55%; padding: 6.5% 0; margin: 13% auto 0;
+  background: url('../img/about/sillaholdings_logo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.T_logo02 {
+  width: 85%; padding: 7% 0; margin: 13% auto 0;
+  background: url('../img/about/sillascholarship_logo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.T_logo03 {
+  width: 75%; padding: 9% 0; margin: 13% auto 0; margin-left: 70px;
+  background: url('../img/about/sillasg_logo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.T_logo04 {
+  width: 65%; padding: 9% 0; margin: 13% auto 0;
   background: url('../img/about/engineering_logo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.T_logo05 {
+  width: 75%; padding: 10% 0; margin: 13% auto 0;
+  background: url('../img/about/cosmo_logo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.T_logo06 {
+  width: 45%; padding: 12% 0; margin: 13% auto 0;
+  background: url('../img/about/visionhills_logo.png') no-repeat;
         background-size: cover;
         background-position: center center;
 }
@@ -266,11 +299,42 @@ h2 {
 .tab-content-cont .tab-cont-right {
     width: 55%; height: 40vh; float: left; 
   }
-  .tab-content-cont:nth-child(1) .tab-cont-right { background: url('../img/about/history_2000.PNG') no-repeat; background-size: cover; background-position: center center; }
-  .tab-content-cont:last-child .tab-cont-right { background: url('../img/about/family_engineering.png') no-repeat; background-size: cover; background-position: center center; }
+  /* .tab-content-cont:nth-child(1) .tab-cont-right { background: url('../img/about/history_2000.PNG') no-repeat; background-size: cover; background-position: center center; }
+  .tab-content-cont:last-child .tab-cont-right { background: url('../img/about/family_engineering.png') no-repeat; background-size: cover; background-position: center center; } */
 
+.F_T_img01 {
+  background: url('../img/about/shillaholdings.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.F_T_img02 {
+  background: url('../img/about/sillascholarship.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.F_T_img03 {
+  background: url('../img/about/sillasg.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.F_T_img04 {
+  background: url('../img/about/engineering.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.F_T_img05 {
+  background: url('../img/about/cosmo.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.F_T_img06 {
+  background: url('../img/about/visionhills.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+  
 .Family_view_more {
-    margin: 0 auto;
+    margin: 60px auto;
   }
   .Family_view_more a { 
     padding: 12px 20px; 
@@ -666,8 +730,8 @@ h2 {
     box-shadow: 30px 30px #2980B9;
     opacity:.87;
 }
-.img_1960_01 { background: url('../img/about/history_img01.jpg') no-repeat; background-size: cover; background-position: center center; }
-.img_1970 { background: url('../img/about/history_1970.png') no-repeat; background-size: cover; background-position: center center; }
+.img_1960_01 { background: url('../img/about/history_img01.JPG') no-repeat; background-size: cover; background-position: center center; }
+.img_1970 { background: url('../img/about/history_1970.PNG') no-repeat; background-size: cover; background-position: center center; }
 .img_1980 { background: url('../img/about/history_1980.JPG') no-repeat; background-size: cover; background-position: center center; }
 .img_1990 { background: url('../img/about/history_1990.jpg') no-repeat; background-size: cover; background-position: center center; }
 .img_2000 { background: url('../img/about/history_2000.PNG') no-repeat; background-size: cover; background-position: center center; }
